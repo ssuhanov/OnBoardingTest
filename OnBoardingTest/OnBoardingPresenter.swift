@@ -10,4 +10,16 @@ import Foundation
 
 class OnBoardingPresenter {
     
+    var imageQueue: [String]
+    
+    init(imageQueue: [String] = OnBoardingImageManager().getImageQueue()) {
+        self.imageQueue = imageQueue
+    }
+    
+    func showNextImage(view: OnBoardingViewProtocol,
+                       localManager: OnBoardingLocalManager = OnBoardingLocalManager()) {
+        
+        
+    }
+    
 }
