@@ -19,7 +19,18 @@ class OnBoardingPresenter {
     func showNextImage(view: OnBoardingViewProtocol,
                        localManager: OnBoardingLocalManager = OnBoardingLocalManager()) {
         
-        
+        if let nextImageName = self.imageQueue.first {
+            view.showImage(imageName: nextImageName)
+            self.imageQueue = Array(self.imageQueue.dropFirst())
+            if self.imageQueue.first != nil {
+                view.updateButton(title: "Продолжить")
+            } else {
+                view.updateButton(title: "Старт")
+            }
+        } else {
+            view.startApplication()
+            localManager.setFlagOnBoardingCompleted()
+        }
     }
     
 }
