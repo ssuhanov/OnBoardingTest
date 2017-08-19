@@ -22,11 +22,8 @@ class OnBoardingPresenter {
         if let nextImageName = self.imageQueue.first {
             view.showImage(imageName: nextImageName)
             self.imageQueue = Array(self.imageQueue.dropFirst())
-            if self.imageQueue.first != nil {
-                view.updateButton(title: "Продолжить")
-            } else {
-                view.updateButton(title: "Старт")
-            }
+            let buttonTitle = self.imageQueue.isEmpty ? "Старт" : "Продолжить"
+            view.updateButton(title: buttonTitle)
         } else {
             view.startApplication()
             localManager.setFlagOnBoardingCompleted()
