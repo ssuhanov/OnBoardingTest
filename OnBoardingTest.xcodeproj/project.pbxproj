@@ -18,6 +18,7 @@
 		B24B58231F482F090062D73D /* OnBoardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24B58221F482F090062D73D /* OnBoardingPresenter.swift */; };
 		B24B58251F482F1C0062D73D /* OnBoardingViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24B58241F482F1C0062D73D /* OnBoardingViewProtocol.swift */; };
 		B24B58281F483BBA0062D73D /* OnBoardingImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24B58271F483BBA0062D73D /* OnBoardingImageManager.swift */; };
+		B24B582A1F483D510062D73D /* OnBoardingLocalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24B58291F483D510062D73D /* OnBoardingLocalManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		B24B58221F482F090062D73D /* OnBoardingPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingPresenter.swift; sourceTree = "<group>"; };
 		B24B58241F482F1C0062D73D /* OnBoardingViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingViewProtocol.swift; sourceTree = "<group>"; };
 		B24B58271F483BBA0062D73D /* OnBoardingImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingImageManager.swift; sourceTree = "<group>"; };
+		B24B58291F483D510062D73D /* OnBoardingLocalManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingLocalManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				B24B58271F483BBA0062D73D /* OnBoardingImageManager.swift */,
+				B24B58291F483D510062D73D /* OnBoardingLocalManager.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			files = (
 				B24B58281F483BBA0062D73D /* OnBoardingImageManager.swift in Sources */,
 				B24B58251F482F1C0062D73D /* OnBoardingViewProtocol.swift in Sources */,
+				B24B582A1F483D510062D73D /* OnBoardingLocalManager.swift in Sources */,
 				B24B581F1F482ED50062D73D /* OnBoardingViewController.swift in Sources */,
 				B24B58001F482B250062D73D /* ViewController.swift in Sources */,
 				B24B57FE1F482B250062D73D /* AppDelegate.swift in Sources */,
