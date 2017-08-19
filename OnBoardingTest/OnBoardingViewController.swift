@@ -20,8 +20,13 @@ class OnBoardingViewController: ViewController {
         self.presenter = OnBoardingPresenter()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.presenter.showNextImage(view: self)
+    }
+    
     @IBAction func continueAction(_ sender: UIButton) {
-        
+        self.presenter.showNextImage(view: self)
     }
     
 }
