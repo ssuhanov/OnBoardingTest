@@ -10,4 +10,8 @@ import Foundation
 
 protocol OnBoardingViewProtocol {
     
+    func showImage(imageName: String)
+    func updateButton(title: String)
+    func startApplication()
+    
 }

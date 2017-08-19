@@ -25,3 +25,22 @@ class OnBoardingViewController: ViewController {
     }
     
 }
+
+// MARK: - OnBoardingViewProtocol
+
+extension OnBoardingViewController: OnBoardingViewProtocol {
+    
+    func showImage(imageName: String) {
+        self.imageView.image = UIImage(named: imageName)
+    }
+    
+    func updateButton(title: String) {
+        self.continueButton.setTitle(title, for: .normal)
+    }
+    
+    func startApplication() {
+        // some logic for application start
+        print("Application is started")
+    }
+    
+}
