@@ -13,6 +13,10 @@
 		B24B58051F482B260062D73D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B24B58041F482B260062D73D /* Assets.xcassets */; };
 		B24B58081F482B260062D73D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B24B58061F482B260062D73D /* LaunchScreen.storyboard */; };
 		B24B58131F482B260062D73D /* OnBoardingTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24B58121F482B260062D73D /* OnBoardingTestTests.swift */; };
+		B24B581F1F482ED50062D73D /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24B581E1F482ED50062D73D /* OnBoardingViewController.swift */; };
+		B24B58211F482EEB0062D73D /* OnBoardingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B24B58201F482EEB0062D73D /* OnBoardingViewController.storyboard */; };
+		B24B58231F482F090062D73D /* OnBoardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24B58221F482F090062D73D /* OnBoardingPresenter.swift */; };
+		B24B58251F482F1C0062D73D /* OnBoardingViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24B58241F482F1C0062D73D /* OnBoardingViewProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		B24B580E1F482B260062D73D /* OnBoardingTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnBoardingTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B24B58121F482B260062D73D /* OnBoardingTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingTestTests.swift; sourceTree = "<group>"; };
 		B24B58141F482B260062D73D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B24B581E1F482ED50062D73D /* OnBoardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		B24B58201F482EEB0062D73D /* OnBoardingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OnBoardingViewController.storyboard; sourceTree = "<group>"; };
+		B24B58221F482F090062D73D /* OnBoardingPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingPresenter.swift; sourceTree = "<group>"; };
+		B24B58241F482F1C0062D73D /* OnBoardingViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingViewProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,7 @@
 		B24B57FC1F482B250062D73D /* OnBoardingTest */ = {
 			isa = PBXGroup;
 			children = (
+				B24B581D1F482EBA0062D73D /* OnBoarding */,
 				B24B57FD1F482B250062D73D /* AppDelegate.swift */,
 				B24B57FF1F482B250062D73D /* ViewController.swift */,
 				B24B58011F482B250062D73D /* Main.storyboard */,
@@ -94,6 +103,17 @@
 				B24B58141F482B260062D73D /* Info.plist */,
 			);
 			path = OnBoardingTestTests;
+			sourceTree = "<group>";
+		};
+		B24B581D1F482EBA0062D73D /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				B24B58241F482F1C0062D73D /* OnBoardingViewProtocol.swift */,
+				B24B581E1F482ED50062D73D /* OnBoardingViewController.swift */,
+				B24B58201F482EEB0062D73D /* OnBoardingViewController.storyboard */,
+				B24B58221F482F090062D73D /* OnBoardingPresenter.swift */,
+			);
+			name = OnBoarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B24B58211F482EEB0062D73D /* OnBoardingViewController.storyboard in Resources */,
 				B24B58081F482B260062D73D /* LaunchScreen.storyboard in Resources */,
 				B24B58051F482B260062D73D /* Assets.xcassets in Resources */,
 				B24B58031F482B260062D73D /* Main.storyboard in Resources */,
@@ -201,8 +222,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B24B58251F482F1C0062D73D /* OnBoardingViewProtocol.swift in Sources */,
+				B24B581F1F482ED50062D73D /* OnBoardingViewController.swift in Sources */,
 				B24B58001F482B250062D73D /* ViewController.swift in Sources */,
 				B24B57FE1F482B250062D73D /* AppDelegate.swift in Sources */,
+				B24B58231F482F090062D73D /* OnBoardingPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +438,7 @@
 				B24B58191F482B260062D73D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B24B581A1F482B260062D73D /* Build configuration list for PBXNativeTarget "OnBoardingTestTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +447,7 @@
 				B24B581C1F482B260062D73D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
