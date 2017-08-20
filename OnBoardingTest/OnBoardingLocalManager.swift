@@ -13,7 +13,7 @@ class OnBoardingLocalManager {
     func setFlagOnBoardingCompleted() {
         // some logic for saving onBoardingCompleted flag
         // maybe use UserDefaults.standard
-        print("OnBoarding completed succefully")
+        print("OnBoarding completed successfully")
     }
     
 }
