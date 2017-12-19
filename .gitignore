@@ -17,7 +17,6 @@ Manifest.lock
 
 ## Pods
 Pods/*
-Podfile.lock
 OnBoardingTest.xcworkspace/contents.xcworkspacedata
 
 ## AppCode
